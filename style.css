@@ -180,8 +180,9 @@ h1
 .choix
 {
     border-radius:20px;
-    width:326px;height:79px;
+    /*width:326px;*/height:79px;width:100%;
     margin:0px auto ;
+    background-color:lightblue;
 }
 
 /* article restaurants */
