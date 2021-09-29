@@ -36,66 +36,67 @@
         <main>
             <!-- la ville à saisir -->
             <article id="localisation">
-                <div id="ville">
-                    <i id="PositionVille" class="fas fa-map-marker-alt"></i>
-                    <input type="text" id="VilleChoisie" name="VilleChoisie" placeholder="Paris, Belleville">
+                <div id="localisation__ville">
+                    <i id="localisation__ville_PositionVille" class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="localisation__ville_VilleChoisie" name="VilleChoisie" placeholder="Paris, Belleville">
                 </div>
             </article>
 
+            <!-- encart descriptif -->
             <article id="descriptif">
-                <div class="intro">
+                <div class="descriptif__intro">
                     <h1>Réservez le menu qui vous convient</h1>
                 </div>
-                <div class="intro">
+                <div class="descriptif__intro">
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
-                <button id="btn">Explorer nos restaurants</button>
+                <button id="descriptif__btn">Explorer nos restaurants</button>
             </article>
 
+            <!-- DOUTE: article ou aside ? demander à KM -->
             <article id="fonctions">
                 <h2>Fonctionnement</h2>
-                <section class="options">                
-                    <button class="choix">Choisissez un restaurant</button>
-                    <button class="choix">Composez votre menu</button>
-                    <button class="choix">Dégustez au restaurant</button>
+                <section class="fonctions__options">                
+                    <button class="fonctions__options_choix">Choisissez un restaurant</button>
+                    <button class="fonctions__options_choix">Composez votre menu</button>
+                    <button class="fonctions__options_choix">Dégustez au restaurant</button>
                 </section>
             </article>
 
-
             <article id="restaurants">
                 <h2>Restaurants</h2>
-                <div class="ContainerFlex">
+                <div class="restaurants__ContainerFlex">
 
-                    <div  class="Resto">
+                    <div  class="restaurants__ContainerFlex_Resto">
                         <a href="#">
-                            <img class="class_top pic_fit" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="1">
+                            <img class="class_top pic_fit" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="1 La palette du goût">
                             <div class="class_bottom">
                                 <p class="class_bold">La palette du goût</p>
                                 <p>Ménilmontant</p>
                             </div>
                         </a>
                     </div>   
-                    <div  class="Resto">
+                    <div  class="restaurants__ContainerFlex_Resto">
                         <a href="#">
-                            <img class="class_top pic_fit" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="2">
+                            <img class="class_top pic_fit" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="2 La note enchantée">
                             <div class="class_bottom">
                                 <p class="class_bold">La note enchantée</p>
                                 <p>Charonne</p>
                             </div>
                         </a>
                     </div>
-                    <div  class="Resto">
+                    <div  class="restaurants__ContainerFlex_Resto">
                         <a href="#">
-                            <img class="class_top pic_fit" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="3">
+                            <img class="class_top pic_fit" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="3 À la française">
                             <div class="class_bottom">
                                 <p class="class_bold">À la française</p>
                                 <p>Cité rouge</p>
                             </div>
                         </a>
                     </div>
-                    <div  class="Resto">
+                    <div  class="restaurants__ContainerFlex_Resto">
                         <a href="#">
-                            <img class="class_top pic_fit" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="3">
+                            <img class="class_top pic_fit" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="4 Le délice des sens">
                             <div class="class_bottom">
                                 <p class="class_bold">Le délice des sens</p>
                                 <p>Folie-Méricourt</p>
@@ -111,7 +112,7 @@
     
         <footer>
             <h3>ohmyfood</h3>
-            <div class="bottom">
+            <div class="footer__bottom">
                 <p>Proposer un restaurant</p>
                 <p>Devenir partenaire</p>
                 <p>Mentions légales</p>

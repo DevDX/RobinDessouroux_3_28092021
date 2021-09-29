@@ -84,7 +84,7 @@ header
    /* box-shadow: 1px -2px rgb(102, 101, 101);*/
 }
 
-#ville
+#localisation__ville
 {
     /*border:solid pink;*/
     margin-top:8px;  margin-left:40px; 
@@ -92,7 +92,7 @@ header
     gap:10px;height:30px;    
 }
 
-#PositionVille
+#localisation__ville_PositionVille
 {
     /*background-color: #F2F2F2;*/
     max-width:55px;width:100%;
@@ -104,7 +104,7 @@ header
     align-items:center;  
 }
 
-#VilleChoisie
+#localisation__ville_VilleChoisie
 {
     font-size:18px; font-family: 'Roboto', sans-serif;   
     font-weight: 500; color:black;
@@ -129,14 +129,14 @@ header
     background-color:#F2F2F2;
 }
 
-.intro
+.descriptif_intro
 {
     margin:0px auto ;
     padding-left:40px;
     display:flex;justify-content: center;
 }
 
-h1
+h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 {   
     font-family: 'Roboto', sans-serif;   
     font-size:  23px;   font-weight: 700;
@@ -144,7 +144,7 @@ h1
 
 }
 
-#btn
+#descriptif_btn
 {
    width:219px;
    height:53px;
@@ -171,13 +171,13 @@ h1
 
 }
 
-.options
+.fonctions__options
 {
     display:flex;
     gap:22px; flex-direction: column;
 }
 
-.choix
+.fonctions__options_choix
 {
     border-radius:20px;
     /*width:326px;*/height:79px;width:100%;
@@ -203,13 +203,13 @@ h1
     margin-bottom:30px;
 }
 
-.ContainerFlex
+.restaurants__ContainerFlex
 {
     /*border:solid orange;*/
     column-gap:25px;
 }
 
-.Resto
+.restaurants__ContainerFlex_Resto
 {
     background-color: white;
     border:5px solid;
@@ -277,7 +277,7 @@ footer>h3
     margin-bottom:25px; margin-top:25px;
 }
 
-.bottom
+.footer__bottom
 {
     display:flex;
     flex-direction:column;
