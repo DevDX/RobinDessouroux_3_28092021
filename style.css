@@ -14,6 +14,7 @@ body
 {
     font-size: 16px;    
     margin:0 auto;
+    background-color:#F2F2F2;
 }
 
 h1, h2, h3
@@ -55,6 +56,7 @@ html
 header
 {
     display:flex;justify-content:center;
+    background-color: white;
 }
 
 .header__logo
@@ -71,6 +73,12 @@ header
 .pic_fit /*classe générique */
 {
     object-fit: cover;   
+}
+
+/* main */
+main
+{
+    background-color:white;
 }
 
 /* article localisation */
@@ -133,7 +141,7 @@ header
 .descriptif_intro
 {
     margin:0px auto ;
-    padding-left:40px;
+    padding-left:60px;
     display:flex;justify-content: center;
 }
 
@@ -161,6 +169,9 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     display:flex;
     flex-direction: column;
     gap:22px;
+    background-color: white;
+   /* border:solid cornflowerblue;*/
+    margin-bottom:70px;
 }
 
 #fonctions>h2
@@ -194,10 +205,12 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 /* article restaurants */
 #restaurants
 {
-    background-color:#F2F2F2;
     display:flex;
     flex-direction: column;
     margin-top:70px;
+    /*border:2px solid orangered;*/
+    margin-bottom:60px;
+    background-color:#F2F2F2;
 }
 
 #restaurants>h2
@@ -211,7 +224,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 
 .restaurants__ContainerFlex
 {
-    /*border:solid orange;*/
+    /*border:solid green;*/
     column-gap:25px;
 }
 
@@ -266,6 +279,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     font-size:16px;/*workaround  bug in chrome */
 }
 
+/* footer */
 footer
 {
     display:flex;
