@@ -141,9 +141,10 @@ main
 .descriptif__intro
 {
     margin:0px auto ;
-    padding-left:50px;
-    display:flex;justify-content: center;
-    /*border:solid pink;*/
+    /*padding-left:50px;*/
+    display:flex;justify-content:center;align-items:center;
+    border:solid pink;
+    text-align: center;
 }
 
 h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
@@ -162,6 +163,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
    background-color:blueviolet;
    border-radius: 25px; 
    margin:20px auto 30px auto;
+   cursor: pointer;
 }
 
 /* article fonctions */
@@ -223,7 +225,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     display:flex;
     flex-direction: column;
     margin-top:70px;
-    /*border:2px solid orangered;*/
+    border:2px solid orangered;
     margin-bottom:60px;
     background-color:#F2F2F2;
 }
@@ -239,7 +241,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 
 .restaurants__ContainerFlex
 {
-    /*border:solid green;*/
+    border:solid green;
     column-gap:25px;
 }
 
@@ -260,7 +262,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     /*width:100%;*/
     height:100%;
     box-shadow: 6px 6px 4px  grey;   
-    /*background-color: purple;*/
+    background-color: purple;
 }
 
 .class_top
