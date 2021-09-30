@@ -130,19 +130,20 @@ main
 #descriptif
 {
     display: flex;
-    flex-direction: column;
-    gap:30px;
+    flex-direction: column;justify-content: center;
+    row-gap:30px;
     margin: 0 auto;
     /*border:solid lawngreen;*/
     background-color:#F2F2F2;
     height:289px;
 }
 
-.descriptif_intro
+.descriptif__intro
 {
     margin:0px auto ;
-    padding-left:60px;
+    padding-left:50px;
     display:flex;justify-content: center;
+    /*border:solid pink;*/
 }
 
 h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
