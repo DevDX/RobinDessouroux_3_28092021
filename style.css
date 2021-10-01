@@ -328,5 +328,10 @@ footer>h3
 .footer__bottom_row
 {
     display:flex;
-    flex-direction:row;   gap:10px;
+    flex-direction:row;   gap:10px;    
+}
+
+footer a
+{
+    color:white;
 }
