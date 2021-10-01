@@ -155,7 +155,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 
 }
 
-.descriptif__btn
+.descriptif__input--button
 {
    width:219px;
    height:53px;
@@ -163,7 +163,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
    background-color:blueviolet;
    border-radius: 25px; 
    margin:20px auto 30px auto;
-   cursor: pointer;
+   cursor: pointer;font-family: 'Roboto', sans-serif; 
 }
 
 /* article fonctions */
@@ -183,7 +183,6 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     font-family: 'Roboto', sans-serif;   
     font-size:  20px;   font-weight: 700;
     margin-top:50px;
-
 }
 
 .fonctions__options
@@ -196,7 +195,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 {
     border-radius:20px;
     /*width:326px;*/min-height:73px;
-    /*min-width: 300px;*/
+    /*min-width: 300px;*/ 
     margin-left:25px; margin-right:18px;
     background-color:/*lightblue;*/#f6f6f6;
     display:flex; flex:1;
@@ -205,19 +204,24 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     gap:20px;
     /*padding-left:40px;*/
     box-shadow: 6px 6px 4px  grey;   /* à vérifier */
-    cursor: pointer;
+    cursor: pointer; 
 }
 
-.fonctions__options_choix:hover
+a.fonctions__options_choix:hover
 {
-    background-color:/*lightblue;*/#f5edff;
+    background-color:#f5edff;  
+}
+
+a.fonctions__options_choix i:hover
+{
+    color:#9356dc;
 }
 
 .fonctions__options_bulle
 {
     position:relative;
     top:0;
-    /*right:3rem;*/left:-1rem;
+    /*right:3rem;*/left:-0.75rem;
     background-color:/*pink;*/#9356dc;color:white;
     width:30px;height:30px;
     border-radius: 50%;
@@ -230,7 +234,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 .fonctions__options i
 {
     color:#7e7e7e;
-    font-size:15px;
+    font-size:16px;
 }
 
 /* article restaurants */
@@ -277,6 +281,13 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     height:100%;
     box-shadow: 6px 6px 4px  grey;   
     /*background-color: purple;*/
+}
+
+.restaurants__ContainerFlex_Resto:hover, .restaurants__ContainerFlex_Resto a:hover
+{
+    background-color:#99E2D0;
+    color:#9356DC; border-radius: 25px;  
+    border-color:#FF79da;
 }
 
 .class_top
@@ -347,4 +358,9 @@ footer>h3
 footer a
 {
     color:white;
+}
+
+footer a:hover
+{
+    color:/*#99E2D0;*/#FF79DA;/*#9356DC;*/   
 }

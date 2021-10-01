@@ -53,7 +53,10 @@
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
                 <div class="descriptif__intro">
-                    <a href="#restaurants"><button class="descriptif__btn">Explorer nos restaurants</button></a>
+                    <!--a href="#restaurants"><button class="descriptif__btn">Explorer nos restaurants</button></a-->
+                    <a href="#restaurants">
+                        <input class="descriptif__input--button" type="button" value="Explorer nos restaurants">
+                    </a>
                 </div>
             </article>
 
@@ -62,24 +65,37 @@
                 <h2>Fonctionnement</h2>
                 <section class="fonctions__options">      
 
-                    <button class="fonctions__options_choix">
+                    <a class="fonctions__options_choix" href="#restaurants">  
                         <span class="fonctions__options_bulle">1</span>
-                        <i class="fas fa-mobile-alt"></i>
-                        <a href="#restaurants">Choisissez un restaurant</a>
-                    </button>   
+                        <i class="fas fa-mobile-alt"></i> 
+                        <p>Choisissez un restaurant</p>                     
+                    </a>
+                    <a class="fonctions__options_choix" href="#">  
+                        <span class="fonctions__options_bulle">2</span>
+                        <i class="fas fa-list"></i> 
+                        <p>Composez votre menu</p>                     
+                    </a>
+                    <a class="fonctions__options_choix" href="#">  
+                        <span class="fonctions__options_bulle">3</span>
+                        <i class="fas fa-store"></i> 
+                        <p>Dégustez au restaurant</p>                     
+                    </a>
+                      
 
+                    <!-- Ancienne version demander à KM son avis - 20211001 23h19
                     <button class="fonctions__options_choix">
                         <span class="fonctions__options_bulle">2</span>
                         <i class="fas fa-list"></i>
                         <a href="#">Composez votre menu</a>
                     </button>
-                    
+
                     <button class="fonctions__options_choix">
                         <span class="fonctions__options_bulle">3</span>
                         <i class="fas fa-store"></i>
                         <a href="#">Dégustez au restaurant</a>
                     </button>
-                
+                    -->
+
                 </section>
             </article>
 
@@ -133,10 +149,28 @@
         <footer class="footer">
             <h3>ohmyfood</h3>
             <div class="footer__bottom">
-                <a href="#"><div class="footer__bottom_row"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></div></a>
-                <a href="#"><div class="footer__bottom_row"><i class="fas fa-hands-helping"></i><p>Devenir partenaire</p></div></a>
-                <a href="#"><div><p>Mentions légales</p></div></a>
-                <a href="#"><div><p>Contact</p></div></a>
+                <a href="#">
+                    <div class="footer__bottom_row">
+                        <i class="fas fa-utensils"></i>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footer__bottom_row">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <p>Mentions légales</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <p>Contact</p>
+                    </div>
+                </a>
             </div>
         </footer>
 
