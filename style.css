@@ -14,7 +14,7 @@ body
 {
     font-size: 16px;    
     margin:0 auto;
-    background-color:#F2F2F2;
+    background-color:#f6f6f6;/*#F2F2F2;*/
 }
 
 h1, h2, h3
@@ -86,7 +86,7 @@ main
 {
     /*border: 2px solid green;*/
     border-top:5px solid transparent;
-    background-color: #eeeded;
+    background-color: #eaeaea;/*#eeeded;*/
     display:flex;justify-content:center;
     height:50px;
    /* box-shadow: 1px -2px rgb(102, 101, 101);*/
@@ -122,7 +122,7 @@ main
     max-width: 185px;
     /*height:30px;*/ 
     /*margin-left:15px;*/
-    background-color: #eeeded;
+    background-color: /*#eeeded*/#eaeaea;
     border:none;
 }
 
@@ -134,7 +134,7 @@ main
     row-gap:30px;
     margin: 0 auto;
     /*border:solid lawngreen;*/
-    background-color:#F2F2F2;
+    background-color:/*#F2F2F2;*/#f6f6f6;
     height:289px;
 }
 
@@ -143,7 +143,7 @@ main
     margin:0px auto ;
     /*padding-left:50px;*/
     display:flex;justify-content:center;align-items:center;
-    border:solid pink;
+    /*border:solid pink;*/
     text-align: center;
 }
 
@@ -195,15 +195,22 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 .fonctions__options_choix
 {
     border-radius:20px;
-    /*width:326px;*/height:73px;
+    /*width:326px;*/min-height:73px;
     /*min-width: 300px;*/
     margin-left:25px; margin-right:18px;
-    background-color:lightblue;
-    display:flex;
+    background-color:/*lightblue;*/#f6f6f6;
+    display:flex; flex:1;
     justify-content:flex-start;
     align-items: center;
     gap:20px;
     /*padding-left:40px;*/
+    box-shadow: 6px 6px 4px  grey;   /* à vérifier */
+    cursor: pointer;
+}
+
+.fonctions__options_choix:hover
+{
+    background-color:/*lightblue;*/#f5edff;
 }
 
 .fonctions__options_bulle
@@ -211,13 +218,19 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     position:relative;
     top:0;
     /*right:3rem;*/left:-1rem;
-    background-color:pink;
+    background-color:/*pink;*/#9356dc;color:white;
     width:30px;height:30px;
     border-radius: 50%;
     display:flex;
     justify-content: center;
     align-items: center;
-    border:solid red;
+    /*border:solid red;*/
+}
+
+.fonctions__options i
+{
+    color:#7e7e7e;
+    font-size:15px;
 }
 
 /* article restaurants */
@@ -226,9 +239,9 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     display:flex;
     flex-direction: column;
     margin-top:70px;
-    border:2px solid orangered;
+    /*border:2px solid orangered;*/
     margin-bottom:60px;
-    background-color:#F2F2F2;
+    background-color:/*#F2F2F2;*/#f6f6f6;
 }
 
 #restaurants>h2 /* à vérifier */
@@ -242,7 +255,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 
 .restaurants__ContainerFlex
 {
-    border:solid green;
+    /*border:solid green;*/
     column-gap:25px;
 }
 
@@ -263,7 +276,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     /*width:100%;*/
     height:100%;
     box-shadow: 6px 6px 4px  grey;   
-    background-color: purple;
+    /*background-color: purple;*/
 }
 
 .class_top
@@ -303,7 +316,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 {
     display:flex;
     flex-direction: column;
-    background-color:rgb(47, 47, 47);
+    background-color:/*rgb(47, 47, 47);*/#353535;
     margin-top:60px;
     color:white;
 }
