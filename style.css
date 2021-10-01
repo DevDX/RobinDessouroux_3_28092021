@@ -127,7 +127,7 @@ main
 }
 
 /* article descriptif */
-#descriptif
+.descriptif
 {
     display: flex;
     flex-direction: column;justify-content: center;
@@ -155,7 +155,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 
 }
 
-#descriptif__btn
+.descriptif__btn
 {
    width:219px;
    height:53px;
