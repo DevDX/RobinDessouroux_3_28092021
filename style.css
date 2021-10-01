@@ -82,7 +82,7 @@ main
 }
 
 /* article localisation */
-#localisation
+.localisation
 {
     /*border: 2px solid green;*/
     border-top:5px solid transparent;
@@ -92,7 +92,7 @@ main
    /* box-shadow: 1px -2px rgb(102, 101, 101);*/
 }
 
-#localisation__ville
+.localisation__ville
 {
     /*border:solid pink;*/
     margin-top:8px;  margin-left:40px; 
@@ -100,7 +100,7 @@ main
     gap:10px;height:30px;    
 }
 
-#localisation__ville_PositionVille
+.localisation__ville_PositionVille
 {
     /*background-color: #F2F2F2;*/
     max-width:55px;width:100%;
@@ -112,7 +112,7 @@ main
     align-items:center;  
 }
 
-#localisation__ville_VilleChoisie
+.localisation__ville_VilleChoisie
 {
     font-size:18px; font-family: 'Roboto', sans-serif;   
     font-weight: 500; color:black;
