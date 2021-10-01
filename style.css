@@ -221,7 +221,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 }
 
 /* article restaurants */
-#restaurants
+.restaurants
 {
     display:flex;
     flex-direction: column;
@@ -231,7 +231,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     background-color:#F2F2F2;
 }
 
-#restaurants>h2
+#restaurants>h2 /* à vérifier */
 {
     margin-left:15px;
     font-family: 'Roboto', sans-serif;   
@@ -299,7 +299,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 }
 
 /* footer */
-footer
+.footer
 {
     display:flex;
     flex-direction: column;
