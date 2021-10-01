@@ -167,7 +167,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
 }
 
 /* article fonctions */
-#fonctions
+.fonctions
 {
     display:flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     margin-bottom:70px;
 }
 
-#fonctions>h2
+.fonctions>h2
 {
     margin-left:15px;
     font-family: 'Roboto', sans-serif;   
