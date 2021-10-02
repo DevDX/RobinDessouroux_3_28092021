@@ -52,11 +52,10 @@ html
 }
 
 /* HEADER */
-
 .header
 {
     display:flex;justify-content:center;
-    background-color: white;
+    background-color: white;    
 }
 
 .header__logo
@@ -85,11 +84,14 @@ main
 .localisation
 {
     /*border: 2px solid green;*/
-    border-top:5px solid transparent;
+    /*border-top:5px solid transparent;*/
     background-color: #eaeaea;/*#eeeded;*/
     display:flex;justify-content:center;
     height:50px;
    /* box-shadow: 1px -2px rgb(102, 101, 101);*/
+   /*box-shadow: inset 0em 0.125em rgba(128, 128, 128, .152);box-shadow: inset 0em 0.125em #d5d5d5;*/
+   box-shadow: inset 0em 0.125em rgba(128, 128, 128, .152);
+
 }
 
 .localisation__ville
@@ -207,12 +209,19 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     cursor: pointer; 
 }
 
-a.fonctions__options_choix:hover
+a.fonctions__options_choix:hover 
 {
     background-color:#f5edff;  
 }
 
-a.fonctions__options_choix i:hover
+/*
+https://www.zonecss.fr/proprietes-css/hover-css-selector.html
+identifiant:hover a{
+ propriétés Css pour les fils de type A de l'élément survolé  
+}
+donc chez moi i
+*/
+a.fonctions__options_choix:hover i
 {
     color:#9356dc;
 }
@@ -321,6 +330,22 @@ a.fonctions__options_choix i:hover
     font-weight:bold;
     font-size:16px;/*workaround  bug in chrome */
 }
+
+/*à vérifier avec KM */
+.nouveau
+{
+    position:relative;z-index:5;
+    top:-16rem;left:65%;/*right:-25%;*/
+    /*left:20rem;*/
+    background-color:#99E2D0;color: #058a69;
+    width:80px;height:30px;
+    border-radius: 3px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+}
+/**/
 
 /* footer */
 .footer
