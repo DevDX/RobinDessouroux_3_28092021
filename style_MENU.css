@@ -14,7 +14,7 @@ body
 {
     font-size: 16px;    
     margin:0 auto;
-    /*background-color:#f6f6f6;*//*#F2F2F2;*/
+    background-color:#f6f6f6;/*#F2F2F2;*/
 }
 
 h1, h2, h3
@@ -135,14 +135,14 @@ Pour cela vous devez utiliser la propriété Css width à 100% sur l'image et pr
     border-top-right-radius:30px;
     border-color:#f6f6f6;
     z-index:5;
-    margin-top:-75px;
+    margin-top:-60px;
     /*border: solid lime;*/
 }
 .gastronomie__LaCarte
 {
     display: flex;
     flex-direction: column;
-    gap:15px;    z-index:15;    
+    /*gap:15px;*/    z-index:15;    
     /*border:solid red;*/
 }
 h1
@@ -150,10 +150,10 @@ h1
     margin:30px auto 0 15px ;z-index:15;
     font-size: 30px;
 }
-h2 /*à remplacer par p class="sous_titre"*/
+.SousTitre /*à remplacer par p class="sous_titre"*/
 {
-    margin-left:15px;
-    font-family: 'Roboto', sans-serif;   
+    margin-left:15px;margin-top:40px;
+    font-family: 'Roboto', sans-serif;  font-size: 1rem; 
 }
 .entrées
 {
@@ -190,18 +190,19 @@ h2 /*à remplacer par p class="sous_titre"*/
 .intitule
 {
     margin-top:15px;
-    margin-left:10px;
+    margin-left:5px;
 }
 .detail_prix
 {
-    display: flex;flex-direction:row;gap:5px;justify-content: space-between;   
-   /* border:solid purple;*/
+    display: flex;flex-direction:row;gap:5px;justify-content: space-between;   align-items:baseline;
+    /*border:solid purple;*/
 }
 .detail
 {
     /*border:solid yellow;*/
-    flex:1;
-    margin-left:10px;
+    flex:3;
+    margin-left:5px;
+    font-size:13px;
 }
 .prix
 {
@@ -209,8 +210,25 @@ h2 /*à remplacer par p class="sous_titre"*/
     flex:1;
     text-align: end;
     margin-right:15px;
-    margin-bottom:15px;
+    margin-bottom:15px;font-size:13px;
 }
+
+.Commander
+{
+    margin-top:50px;margin-bottom:80px;
+    /*padding-left:92px;*/ margin-right:auto;margin-left: auto;
+    
+    display:flex;justify-content: center;
+}
+
+.Commander--input
+{
+    width:100%;height:100%;min-width:185px;min-height:59px;
+    border-radius:25px;border:none;color:white;font-weight: bold;
+    background-color: #9356dc;
+    cursor:pointer;
+}
+
 /* footer */
 .footer
 {
