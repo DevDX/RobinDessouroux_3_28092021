@@ -1,0 +1,23 @@
+@mixin fitimage /*.pic_fit*/
+{
+    object-fit: cover;       
+}
+
+@mixin thumbnail /*.class_top & .class_bottom*/
+{
+    width:100%;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    cursor: pointer;
+}
+
+@mixin bold /*.class_bold*/
+{
+    font-weight:bold;
+    font-size:16px;/*workaround  bug in chrome */
+}
+
+@mixin shadow
+{
+    box-shadow: 6px 6px 4px  grey;   /* à vérifier */
+}

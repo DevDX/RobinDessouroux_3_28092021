@@ -1,6 +1,9 @@
-@import "./utils/variables";
+@import "./Utils/variables";
 
-@import "./base/base";
-@import "./base/typography";
+@import "./Base/base";
+@import "./Base/typography";
 
-@import "./layout/header";
+@import "./Layout/header";
+@import "./Layout/footer";
+
+@import "./Pages/accueil";
