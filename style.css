@@ -259,7 +259,7 @@ a.fonctions__options_choix:hover i
     background-color:/*#F2F2F2;*/#f6f6f6;
 }
 
-#restaurants>h2 /* à vérifier */
+.restaurants>h2/* à vérifier */
 {
     margin-left:15px;
     font-family: 'Roboto', sans-serif;   
@@ -271,7 +271,7 @@ a.fonctions__options_choix:hover i
 /*à vérifier avec KM */
 .ContainerNew
 {
-    /*display:flex;*//*border:solid green;*/
+    /*display:flex;*/
     z-index:5;
     width:100%;height:175px;
 }
@@ -291,7 +291,7 @@ a.fonctions__options_choix:hover i
     font-size:16px;
     /*border:solid orange;*/
 }
-.nouveau:hover, .New:hover 
+.nouveau:hover, .New:hover
 {
     color:#9356DC; background-color:#f5edff;   
 }
@@ -307,15 +307,16 @@ a.fonctions__options_choix:hover i
     display:flex;/*flex:1;*/
     justify-content: center;
     align-items: center;
-    font-size:16px;
+    font-size:16px;font-weight:bold;  
     /*border:solid orange;*/
 }
+
 
 /**/
 .restaurants__ContainerFlex
 {
     /*border:solid green;*/
-    column-gap:25px;
+    column-gap:25px;display:flex;flex-direction: column;
 }
 
 .restaurants__ContainerFlex_Resto
@@ -324,7 +325,7 @@ a.fonctions__options_choix:hover i
     border:5px solid;
     border-color:transparent;
     border-radius: 25px; 
-    /*min-width:232px;flex:1;*/
+    /*min-width:335px;flex:1;*/
     display:flex;flex:1;
     flex-direction:column;
     flex-wrap:wrap;
@@ -332,8 +333,8 @@ a.fonctions__options_choix:hover i
     margin-left:15px;
     margin-right:15px;
     margin-bottom:15px;
-    /*width:100%;*/
-    height:100%;
+   /* width:100%;
+    height:100%;*/
     box-shadow: 6px 6px 4px  grey;   
     /*background-color: purple;*/
 }
@@ -369,7 +370,7 @@ a.fonctions__options_choix:hover i
     padding-top:20px;
     padding-bottom:10px;
     padding-left:15px;
-    height:77px;height:100%;
+    height:77px;/*height:100%;*/
 }
 
 .class_bold
@@ -421,4 +422,46 @@ footer a
 footer a:hover
 {
     color:/*#99E2D0;*/#FF79DA;/*#9356DC;*/   
+}
+
+@media screen and (min-width:701px)
+{
+    .footer__bottom
+    {
+        flex-direction:row;    
+        /*border:solid pink;*/
+        width:80%;gap:50px;
+    }  
+}
+
+@media screen and (min-width:768px)
+{
+ 
+    .restaurants__ContainerFlex
+    {
+        gap:20px;
+        /*border:solid chartreuse;*/
+        flex-direction: row;
+        margin-top:45px;    
+    }
+
+    .restaurants__ContainerFlex_Resto
+    {
+        flex:2;width:100%;       
+    }
+       
+    .New
+    {
+        right:-47%;
+    }
+
+}
+
+@media screen and (min-width:864px)
+{
+    .fonctions__options
+    {
+        flex-direction: row;
+        gap:22px;
+    }
 }
