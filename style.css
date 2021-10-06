@@ -268,10 +268,13 @@ a.fonctions__options_choix:hover i
     margin-bottom:30px;
 }
 
-/*.ContainerNew
+/*à vérifier avec KM */
+.ContainerNew
 {
-    display:flex;border:solid green;z-index:5;
-}*/
+    /*display:flex;*//*border:solid green;*/
+    z-index:5;
+    width:100%;height:175px;
+}
 /*à vérifier avec KM */
 .nouveau
 {
@@ -279,7 +282,7 @@ a.fonctions__options_choix:hover i
     top:-16rem;left:16rem;
     /*left:50%*/;/*right:10rem;*/
     /*left:20rem;*/
-    background-color:#99E2D0;color: #058a69;
+    background-color:/*#99E2D0*/rgb(0, 214, 252);color: #058a69;
     width:80px;height:30px;
     border-radius: 3px;
     display:flex;flex:1;
@@ -288,9 +291,24 @@ a.fonctions__options_choix:hover i
     font-size:16px;
     /*border:solid orange;*/
 }
-.nouveau:hover 
+.nouveau:hover, .New:hover 
 {
     color:#9356DC; background-color:#f5edff;   
+}
+.New
+{
+    position:relative;z-index:6;
+    top:-10rem;right:-72%;
+    /*left:50%*/;/*right:10rem;*/
+    /*left:20rem;*/
+    background-color:#99E2D0;color: #058a69;
+    width:80px;height:30px;
+    border-radius: 3px;
+    display:flex;/*flex:1;*/
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    /*border:solid orange;*/
 }
 
 /**/
@@ -351,7 +369,7 @@ a.fonctions__options_choix:hover i
     padding-top:20px;
     padding-bottom:10px;
     padding-left:15px;
-    height:77px;
+    height:77px;height:100%;
 }
 
 .class_bold
