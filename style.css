@@ -416,37 +416,27 @@ a.fonctions__options_choix:hover i
 /*à vérifier avec KM */
 .ContainerNew
 {
-    /*display:flex;*/
-    z-index:5;
+    z-index:1;
     width:100%;height:175px;
+    /*border:solid lawngreen;*/  
+    position:relative;
 }
-/*à vérifier avec KM */
-.nouveau
-{
-    position:relative;z-index:5;
-    top:-16rem;left:16rem;
-    /*left:50%*/;/*right:10rem;*/
-    /*left:20rem;*/
-    background-color:/*#99E2D0*/rgb(0, 214, 252);color: #058a69;
-    width:80px;height:30px;
-    border-radius: 3px;
-    display:flex;flex:1;
-    justify-content: center;
-    align-items: center;
-    font-size:16px;
-    /*border:solid orange;*/
-}
-.nouveau:hover, .New:hover
-{
-    color:#9356DC; background-color:#f5edff;   
-}
+
 .New
 {
-    position:relative;z-index:6;
-    top:-10rem;right:-72%;
-    /*left:50%*/;/*right:10rem;*/
-    /*left:20rem;*/
-    background-color:#99E2D0;color: #058a69;
+    /*margin-top:-150px;
+    margin-right:25px;
+    margin-left:50px;*/
+    
+    position: absolute;
+    top:10px;
+    /*right:0;*/
+    /*left:10px;*/
+    right:10px;
+
+    z-index:6;
+    background-color:#99E2D0;
+    color: #058a69;
     width:80px;height:30px;
     border-radius: 3px;
     display:flex;/*flex:1;*/
@@ -482,6 +472,8 @@ a.fonctions__options_choix:hover i
     height:100%;*/
     box-shadow: 6px 6px 4px  grey;   
     /*background-color: purple;*/
+    /*test rdx*/
+    /*position:relative;*/
 }
 
 .restaurants__ContainerFlex_Resto:hover,  .restaurants__ContainerFlex_Resto:hover .class_bold 
@@ -595,10 +587,10 @@ footer a:hover
         flex:2;width:100%;       
     }
        
-    .New
+    /*.New
     {
         right:-47%;
-    }
+    }*/
 
 }
 
