@@ -63,6 +63,7 @@ header
     background-color: white;   
     /*gap:5rem;*/ 
     /*border:solid orange;*/
+    position:relative;
 }
 
 .header__logo
@@ -86,10 +87,14 @@ header
 /*header button*/
 .retour 
 {
-    position:absolute;/*padding-left:2rem;*//*margin-top:1.25rem;*/margin-top:2.25rem;/*margin-left:1rem;*/top:-2.25%;left:5%;
+    position:absolute;/*margin-top:2.25rem;top:-2.25%;left:5%;*/
+
+    /*padding-left:2rem;*//*margin-top:1.25rem;*//*margin-left:1rem;*/
     min-width:20px; min-height:20px;
-    font-size: 20px;z-index:5;
+    /*font-size: 20px;*/z-index:5;font-size:18px;font-weight:bold;
     /*border:solid purple;*/
+    /*top:20px; left:20px;*/
+    top:35%;left:5%;
 }
 
 .retourOld
@@ -109,11 +114,12 @@ header
 
 header a:hover i
 {
-    font-weight: bolder;
+    /*font-weight: bolder;
     color: #9356dc;
-    transition: transform  1.5s ease-in-out; /* Animation */
-    transform: scale(2.5);
+    transition: transform  1.5s ease-in-out;*/ /* Animation */
+    /*transform: scale(2.5);*/
     /*font-size: 20px;*/
+    color:#FF79DA;
 }
 
 
@@ -285,15 +291,15 @@ footer a:hover
     color:/*#99E2D0;*/#FF79DA;/*#9356DC;*/   
 }
 
-@media screen and (min-width:701px)
+/*@media screen and (min-width:701px)
 {
     .footer__bottom
     {
         flex-direction:row;    
         /*border:solid pink;*/
-        width:80%;gap:50px;
+        /*width:80%;gap:50px;
     }  
-}
+}*/
 
 @media screen and (min-width:756px)
 {
