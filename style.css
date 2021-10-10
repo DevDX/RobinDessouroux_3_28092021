@@ -512,6 +512,7 @@ a.fonctions__options_choix:hover i
     padding-bottom:10px;
     padding-left:15px;
     height:77px;/*height:100%;*/
+    gap:14px;
 }
 
 .class_bold
@@ -520,7 +521,25 @@ a.fonctions__options_choix:hover i
     font-size:16px;/*workaround  bug in chrome */
 }
 
+.FlexRDX
+{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
 
+.Container_coeur
+{
+    display: flex;flex-direction: row;;
+    position: relative;
+}
+
+.coeur
+{
+    font-size:24px;
+    position: absolute;
+    top:-55px;right:20px;    
+}
 
 /* footer */
 .footer
