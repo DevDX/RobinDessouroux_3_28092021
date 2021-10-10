@@ -445,6 +445,9 @@ a.fonctions__options_choix:hover i
     align-items: center;
     font-size:16px;font-weight:bold;  
     /*border:solid orange;*/
+    /* demande de KM pas de lien sur NOUVEAU*/
+    pointer-events:unset; 
+    cursor:default; 
 }
 
 
