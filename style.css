@@ -314,6 +314,13 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
    margin:20px auto 30px auto;
    cursor: pointer;font-family: 'Roboto', sans-serif; 
    border:transparent;
+   box-shadow: 6px 6px 4px  #808080;   
+}
+
+.descriptif__input--button:hover
+{
+    filter: brightness(110%);
+    box-shadow: 6px 6px 4px  black;   
 }
 
 /* article fonctions */
