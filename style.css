@@ -107,7 +107,7 @@ main
 
 #loader 
 {
-	animation-delay: -0.5s; /*pour démarrer tout de suite, comme si il était à la situation au bout de 1 seconde */
+	animation-delay: -0.5s; /*pour démarrer tout de suite, comme si il était à la situation au bout de 0.5 seconde */
 	 
     display: block;
     position: relative;
@@ -175,9 +175,7 @@ main
         -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
         -ms-transform: rotate(360deg);  /* IE 9 */
         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-        z-index:15; 
-        
-        
+        z-index:15;       
     }
 }
 
@@ -196,8 +194,7 @@ main
         -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
         -ms-transform: rotate(360deg);  /* IE 9 */
         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-        z-index:15; 
-        
+        z-index:15;         
     }
 }
 
@@ -205,8 +202,7 @@ main
 .displayfade
 {
 	animation: displayfade 2.95s;
-  	opacity: 0;z-index:-1;
-        
+  	opacity: 0;z-index:-1;        
 }
 
 /* fin spinner */
