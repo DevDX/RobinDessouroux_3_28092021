@@ -272,11 +272,16 @@ i.coeurplein:before, i.coeurvide:before {
     padding-left:10px;
     overflow: hidden;
     
-    transition: all 1.5s ease-out;
+    /*transition: all 1.5s ease-out;*/
     /*transition :animation 1.5s ease-out;*/
     /*transition:slide-left 1.5s ease-out;
     transition:transform 1.5s ease-out;*/
     /*transition-duration: 0.5s;*/
+    /*transition-property: transform;*/
+    /*transition: 2s;*/
+    transition: transform 330ms ease-in-out;
+    animation-fill-mode: backwards;
+
     
 }
 .visible
@@ -420,9 +425,28 @@ i.coeurplein:before, i.coeurvide:before {
 }
 .check
 {
-    display: none;
-    cursor: pointer;    transition: all 1.5s ease-out;
-    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /*display: none;*/
+    cursor: pointer;    
+    /*transition: transform 330ms ease-in-out;*/
+    /*animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
+    /*animation-fill-mode: backwards;*/
+    display:flex;
+    font-size:22px;
+    color:white;
+    background-color: #99E2D0; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index:15;
+    height:100%; min-height:69px;
+    /*max-width:58px;width:100%;*/
+    border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+    flex-wrap: wrap;
+
+    max-width:0px;width:0%;
+    margin-right: 0px;margin-left: auto;
+	transition-duration: 5.5s;
+	transition-timing-function: ease;
 }
 .choix:hover .check /*pour faire apparaître le check*/ 
 {
@@ -439,16 +463,22 @@ i.coeurplein:before, i.coeurvide:before {
     border-bottom-right-radius: 20px;border-top-right-radius: 20px;
     flex-wrap: wrap;
     
-    animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /*animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
+    /*transition: margin-left 2s .5s;*/
+    /*transform: translate(-15px,0);*/
+
+    margin-right: 0px;
+	transition-duration: 5.5s;
+	transition-timing-function: ease;
 }
 .choix:hover i.rotation  /*pour faire tourner l'icône*/ 
 {
-    animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 3.6s ease-in-out both;
 }
 
 /*.choix:hover::after    
 {
-    content:"";
+    content:"after";
     display:flex;
     font-size:22px;
     color:white;
