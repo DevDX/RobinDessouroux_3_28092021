@@ -303,12 +303,13 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
    cursor: pointer;font-family: 'Roboto', sans-serif; font-size:15px;
    border:transparent;
    box-shadow: 6px 6px 4px  #808080;   
+   transition: box-shadow 0.3s, filter 0.3s;
 }
 
 .descriptif__input--button:hover
 {
     filter: brightness(110%);
-    box-shadow: 6px 6px 4px  black;   
+    /*box-shadow: 6px 6px 4px  black;*/   box-shadow: 6px 6px 4px  #333;   
 }
 
 /* article fonctions */
@@ -555,7 +556,7 @@ i.coeurvide:hover
 i.coeurplein:hover
 {
     z-index:8;
-    animation: fillheart 2s linear forwards;
+    animation: fillheart 0.3s linear forwards;
     opacity:1;
 }
 @keyframes fillheart
@@ -565,35 +566,35 @@ i.coeurplein:hover
         opacity: 0.25;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px;
     }
     25%
     {
         opacity: .33;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px;
     }
     50%
     {
         opacity: .50;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px;
     }
     75%
     {
         opacity: .75;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px;
     }
     100%
     {
         opacity: 1;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px;
     }
 }
 i.coeurplein:before, i.coeurvide:before {

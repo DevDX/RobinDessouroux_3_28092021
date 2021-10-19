@@ -193,18 +193,19 @@ h1
 /**/
 .Container_coeur
 {
-    display: flex;flex-direction: row;
+    display: flex;flex-direction: row;justify-content: center;
     position: relative;  
-    /*border:solid pink;
-    background-color:aqua;*/
+    /*border:solid aqua;*/
+    /*background-color:aqua;*/
     
 }
 
 .coeurplein, .coeurvide
 {
-    font-size:24px;font-weight:100;
+    font-size:23.5px;font-weight:100;
     position: absolute;
-    /*top:-70px*/top:-35px;right:20px;    /*border:solid pink;*/
+    /*top:-70px*/top:-35px;right:20px;    
+    /*border:solid lightgreen;*/
     /*color:white;*/
     cursor: pointer;
 }
@@ -224,7 +225,7 @@ i.coeurvide:hover
 i.coeurplein:hover
 {
     z-index:8;
-    animation: fillheart 2s linear forwards;
+    animation: fillheart 0.3s linear forwards;
     opacity:1;
 }
 @keyframes fillheart
@@ -234,40 +235,41 @@ i.coeurplein:hover
         opacity: 0.25;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px; 
     }
     25%
     {
         opacity: .33;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px; 
     }
     50%
     {
         opacity: .50;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
-    }
+        color: transparent;font-size:24.25px; 
+    }    
     75%
     {
         opacity: .75;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:24.25px; 
     }
     100%
     {
         opacity: 1;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        color: transparent;font-size:25.5px; right:19.25px;top:-35.75px;
+        /*font-size:25.75px;top:-35.75px;right:19.5px;*/
     }
 }
-i.coeurplein:before, i.coeurvide:before {
+/*i.coeurplein:before, i.coeurvide:before {
     display: initial;
-  }
+  }*/
 /**/
 
 .SousTitre /*à remplacer par p class="sous_titre"*/
@@ -282,7 +284,7 @@ i.coeurplein:before, i.coeurvide:before {
 .entrées
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; flex-wrap: nowrap;
     gap:15px;z-index:15;transition: all 1.5s ease-out;
 }
 .plats
@@ -488,7 +490,7 @@ i.coeurplein:before, i.coeurvide:before {
 
     max-width:0px;width:0%;
     margin-right: 0px;margin-left: auto;
-	transition-duration: 5.5s;
+	/*transition-duration: 5.5s;*/transition-duration: 0.5s;
 	transition-timing-function: ease;
 }
 .choix:hover .check /*pour faire apparaître le check*/ 
@@ -511,12 +513,12 @@ i.coeurplein:before, i.coeurvide:before {
     /*transform: translate(-15px,0);*/
 
     margin-right: 0px;
-	transition-duration: 5.5s;
+	/*transition-duration: 5.5s;*/transition-duration: 0.5s;
 	transition-timing-function: ease;
 }
 .choix:hover i.rotation  /*pour faire tourner l'icône*/ 
 {
-    animation: rotate-center 3.6s ease-in-out both;
+    /*animation: rotate-center 3.6s ease-in-out both;*/animation: rotate-center 0.3s ease-in-out both;
 }
 
 /*.choix:hover::after    
@@ -714,12 +716,13 @@ i.coeurplein:before, i.coeurvide:before {
     margin:20px auto 30px auto;/* à vérifier */
     cursor: pointer;font-family: 'Roboto', sans-serif;  font-size:15px;
     border:transparent;
-    box-shadow: 6px 6px 4px  #808080;   
+    box-shadow: 6px 6px 4px  #808080;  
+    transition: box-shadow 0.3s, filter 0.3s; 
 }
 .Commander--input:hover
 {
     filter: brightness(110%);
-    box-shadow: 6px 6px 4px  black;   
+    /*box-shadow: 6px 6px 4px  black;*/   box-shadow: 6px 6px 4px  #333;  
 }
 
 
@@ -776,7 +779,8 @@ footer a:hover
     }  
 }*/
 
-@media screen and (min-width:756px)
+@media screen and (min-width:1648px)
+/*@media screen and (min-width:756px)*/
 {
     
     .gastronomie__LaCarte
