@@ -6,7 +6,6 @@
     &__logo
     {   
         position:relative;margin:1rem 100px;
-        /*background-color:yellow;*/    
 
         &_ohmyfood
         {
@@ -15,7 +14,7 @@
     }
 }
 
-.pic_fit /*classe générique */
+.pic_fit 
 {
     @include fitimage;
 }
