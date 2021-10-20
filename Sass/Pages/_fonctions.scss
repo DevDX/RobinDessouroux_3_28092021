@@ -1,0 +1,84 @@
+/* article fonctions */
+.fonctions
+{
+    display:flex;
+    flex-direction: column;
+    gap:22px;
+    background-color: white;
+   /* border:solid cornflowerblue;*/
+    margin-bottom:70px;
+
+    &>h2
+    {
+        margin-left:15px;
+        font-family: 'Roboto', sans-serif;   
+        font-size:  20px;   font-weight: 700;
+        margin-top:50px;
+    }
+
+    &__options
+    {
+        display:flex;
+        gap:22px; flex-direction: column;
+        
+        &_choix
+        {
+            border-radius:20px;
+            /*width:326px;*/min-height:73px;
+            /*min-width: 300px;*/ 
+            margin-left:25px; margin-right:18px;
+            background-color:/*lightblue;*/#f6f6f6;
+            display:flex; flex:1;
+            justify-content:flex-start;
+            align-items: center;
+            gap:20px;
+            /*padding-left:40px;*/
+            box-shadow: 6px 6px 4px  grey;   /* à vérifier */
+            cursor: pointer; 
+        }
+    
+
+
+        &_bulle
+        {
+            position:relative;
+            top:0;
+            /*right:3rem;*/left:-0.75rem;
+            background-color:/*pink;*/#9356dc;color:white;
+            width:30px;height:30px;
+            border-radius: 50%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /*border:solid red;*/
+        }
+
+        & i /*.fonctions__options i*/
+        {
+            color:#7e7e7e;
+            font-size:16px;
+        }
+
+    }
+    
+
+
+}
+
+
+a.fonctions__options_choix:hover 
+{
+    background-color:#f5edff;  
+}
+
+/*
+https://www.zonecss.fr/proprietes-css/hover-css-selector.html
+identifiant:hover a{
+ propriétés Css pour les fils de type A de l'élément survolé  
+}
+donc chez moi i
+*/
+a.fonctions__options_choix:hover i
+{
+    color:#9356dc;
+}

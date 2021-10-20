@@ -1,0 +1,49 @@
+/* article localisation */
+.localisation
+{
+    /*border: 2px solid green;*/
+    /*border-top:5px solid transparent;*/
+    background-color: #eaeaea;/*#eeeded;*/
+    display:flex;justify-content:center;
+    height:50px;
+    /* box-shadow: 1px -2px rgb(102, 101, 101);*/
+    /*box-shadow: inset 0em 0.125em rgba(128, 128, 128, .152);box-shadow: inset 0em 0.125em #d5d5d5;*/
+    box-shadow: inset 0em 0.125em rgba(128, 128, 128, .152);
+
+    &__ville
+    {
+        /*border:solid pink;*/
+        margin-top:8px;  margin-left:40px; 
+        display:flex;justify-content:center;  
+        gap:10px;height:30px;    
+    
+        &_PositionVille
+        {
+            /*background-color: #F2F2F2;*/
+            max-width:55px;width:100%;
+            font-size:18px;
+            /*height:65px;*/ height:100%;
+            align-content: center;   
+            display:flex;
+            justify-content:center;
+            align-items:center;  
+        }   
+    
+        &_VilleChoisie
+        {
+            font-size:18px; font-family: 'Roboto', sans-serif;   
+            font-weight: 500; color:black;
+            display:flex;
+            justify-content:flex-start;align-content: flex-start;
+            align-items:flex-start;   
+            max-width: 185px;
+            /*height:30px;*/ 
+            /*margin-left:15px;*/
+            background-color: /*#eeeded*/#eaeaea;
+            border:none;
+        }
+
+    }
+
+}
+

@@ -77,6 +77,7 @@ header
 {
     width:100%;height:100%;    
     /*border:solid pink;*/
+    font-size:clamp(28px,5vw,68px);
 }
 
 .pic_fit /*classe générique */
@@ -91,7 +92,7 @@ header
 
     /*padding-left:2rem;*//*margin-top:1.25rem;*//*margin-left:1rem;*/
     min-width:20px; min-height:20px;
-    /*font-size: 20px;*/z-index:5;font-size:18px;font-weight:bold;
+    /*font-size: 20px;*/z-index:5;/*font-size:18px*/font-size:clamp(18px,5vw,32px);font-weight:bold;
     /*border:solid purple;*/
     /*top:20px; left:20px;*/
     top:35%;left:5%;
@@ -211,7 +212,7 @@ h1
 }
 i.coeurplein
 {
-    z-index:6;opacity:0;
+    /*z-index:6;*/opacity:0;z-index:8;
 }
 i.coeurvide
 {
@@ -224,7 +225,7 @@ i.coeurvide:hover
 
 i.coeurplein:hover
 {
-    z-index:8;
+    /*z-index:8;*/
     animation: fillheart 0.3s linear forwards;
     opacity:1;
 }
@@ -342,27 +343,27 @@ i.coeurplein:hover
 .slide-top
 {    
     opacity:0;
-    -webkit-animation: slide-top 3s linear forwards 0s;
-    animation: slide-top 3s linear forwards 0s;/*animation-delay: 0s; délai 0s */
+    -webkit-animation: slide-top 1.75s linear forwards 0.25s;
+    animation: slide-top 1.75s linear forwards 0.25s;/*animation-delay: 0s; délai 0s */
 }
 
 .slide-top2 
 {    
     opacity:0;
-    -webkit-animation: slide-top 3s linear forwards 1s;
-    animation: slide-top 3s linear forwards 1s;/*animation-delay: 1s; délai 1s */
+    -webkit-animation: slide-top 1.75s linear forwards 0.5s;
+    animation: slide-top 1.75s linear forwards 0.5s;/*animation-delay: 1s; délai 1s */
 }
 .slide-top3 
 {  
     opacity:0;
-    -webkit-animation: slide-top 3s linear forwards 2s;
-    animation: slide-top 3s linear forwards 2s;/*animation-delay: 2s; délai 2s */
+    -webkit-animation: slide-top 1.75s linear forwards 0.75s;
+    animation: slide-top 1.75s linear forwards 0.75s;/*animation-delay: 2s; délai 2s */
 }
 .slide-top4 
 {  
     opacity:0;
-    -webkit-animation: slide-top 3s linear forwards 3s;
-    animation: slide-top 3s linear forwards 3s;/*animation-delay: 3s; délai 3s */
+    -webkit-animation: slide-top 1.75s linear forwards 1s;
+    animation: slide-top 1.75s linear forwards 1s;/*animation-delay: 3s; délai 3s */
 }
 /* ou en faire plus ? 9 ou 10 ? demander à KM */
 
@@ -425,7 +426,7 @@ i.coeurplein:hover
 }
 .intitule
 {
-    margin-top:15px;
+    margin-top:11px;
     margin-left:5px;
     overflow: hidden;
 }
@@ -436,10 +437,11 @@ i.coeurplein:hover
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;  
+    font-size:18px;
 }
 .detail_prix
 {
-    display: flex;flex-direction:row;gap:5px;justify-content: space-between;   align-items:baseline;cursor: pointer;
+    display: flex;flex-direction:row;/*gap:5px;*/justify-content: space-between;   align-items:baseline;cursor: pointer;
     /*border:solid purple;*/flex-wrap:nowrap; 
     
 }
@@ -448,7 +450,7 @@ i.coeurplein:hover
     /*border:solid yellow;*/
     flex:3;
     margin-left:5px;
-    font-size:13px;   
+    /*font-size:13px;*/font-size: 15px;   
     overflow: hidden;
 }
 .detail p
@@ -466,7 +468,7 @@ i.coeurplein:hover
     flex:1;
     text-align: end;
     margin-right:15px;
-    margin-bottom:15px;font-size:13px;
+    margin-bottom:11px;/*font-size:13px;*/font-size:16px;
 }
 .check
 {
