@@ -93,7 +93,7 @@ main
     background-color:#f5edff; 
     pointer-events: none;/* sinon l'écran est figé*/
     opacity: 1;    
-    animation: displayfade 500ms 3s forwards;
+    animation: displayfade 500ms 1.75s forwards;
 }
 
 @keyframes displayfade
@@ -107,7 +107,7 @@ main
 
 #loader 
 {
-	animation-delay: -0.5s; /*pour démarrer tout de suite, comme si il était à la situation au bout de 0.5 seconde */
+	animation-delay: -0.75s; /*pour démarrer tout de suite, comme si il était à la situation au bout de 0.75 seconde */
 	 
     display: block;
     position: relative;
@@ -120,9 +120,9 @@ main
     border: 3px solid transparent;
     border-top-color: #9356DC;
     
-    -webkit-animation: spinner 0.5s linear 18;
+    -webkit-animation: spinner 0.5s linear 5;
     
-    animation: spinner 0.5s linear 18;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */ 
+    animation: spinner 0.5s linear 5;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */ 
 }
  
 #loader:before 
@@ -137,9 +137,9 @@ main
     border: 3px solid transparent;
     border-top-color: #FF79DA;
      
-	-webkit-animation: spinner 1s linear 9;
+	-webkit-animation: spinner 0.75s linear 3;
     
-	animation: spinner 1s linear 9;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */   
+	animation: spinner 0.75s linear 3;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */   
 }
  
 #loader:after 
@@ -154,9 +154,9 @@ main
     border: 3px solid transparent;
     border-top-color: #99E2D0;
     
-	-webkit-animation: spinner 1.5s linear 6;
+	-webkit-animation: spinner 1.25s linear 2;
         
-	animation: spinner 1.5s linear 6;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */    
+	animation: spinner 1.25s linear 2;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */    
     
 }
  
@@ -201,7 +201,7 @@ main
 /**/
 .displayfade
 {
-	animation: displayfade 2.95s;
+	animation: displayfade 2s;
   	opacity: 0;z-index:-1;        
 }
 
@@ -542,7 +542,7 @@ a.fonctions__options_choix:hover i
 }
 i.coeurplein
 {
-    z-index:6;opacity:0;
+    /*z-index:6;*/opacity:0;z-index:8;
 }
 i.coeurvide
 {
@@ -555,7 +555,7 @@ i.coeurvide:hover
 
 i.coeurplein:hover
 {
-    z-index:8;
+    /*z-index:8;*/
     animation: fillheart 0.3s linear forwards;
     opacity:1;
 }
