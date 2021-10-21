@@ -33,7 +33,9 @@
             align-items: center;
             gap:20px;
             /*padding-left:40px;*/
-            box-shadow: 6px 6px 4px  grey;   /* à vérifier */
+            /*box-shadow: 6px 6px 4px  grey;    à vérifier */
+            /*box-shadow: 6px 6px 4px  $shadow;*/ 
+            @include shadow;
             cursor: pointer; 
         }
     
@@ -81,4 +83,14 @@ donc chez moi i
 a.fonctions__options_choix:hover i
 {
     color:$primary; /*#9356dc;*/
+}
+
+
+@media screen and (min-width:864px)
+{
+    .fonctions__options
+    {
+        flex-direction: row;
+        gap:22px;
+    }
 }

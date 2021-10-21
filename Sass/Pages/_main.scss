@@ -41,7 +41,7 @@ main
     margin:-100px 0 0 -100px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #9356DC;
+    border-top-color: $primary;/*#9356DC;*/
     
     -webkit-animation: spinner 0.5s linear 5;
     
@@ -58,7 +58,7 @@ main
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #FF79DA;
+    border-top-color: $secondary;/*#FF79DA;*/
      
 	-webkit-animation: spinner 0.75s linear 3;
     
@@ -75,7 +75,7 @@ main
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #99E2D0;
+    border-top-color: $tertiary;/*#99E2D0;*/
     
 	-webkit-animation: spinner 1.25s linear 2;
         

@@ -34,7 +34,8 @@
         margin:20px auto 30px auto;
         cursor: pointer;font-family: 'Roboto', sans-serif; font-size:15px;
         border:transparent;
-        box-shadow: 6px 6px 4px  #808080;   
+        /*box-shadow: 6px 6px 4px  #808080;  */ /*box-shadow: 6px 6px 4px $shadow;*/
+        @include shadow;
         transition: box-shadow 0.3s, filter 0.3s;
 
         &:hover
