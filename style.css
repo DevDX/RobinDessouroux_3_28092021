@@ -303,7 +303,8 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
    margin:20px auto 30px auto;
    cursor: pointer;font-family: 'Roboto', sans-serif; font-size:15px;
    border:transparent;
-   box-shadow: 6px 6px 4px  #808080;   
+   /*box-shadow: 6px 6px 4px  #808080;*/   
+   box-shadow: 6px 6px 4px  #e7e7e7;   
    transition: box-shadow 0.3s, filter 0.3s;
 }
 
@@ -350,7 +351,8 @@ h1 /* 1 seul h1 dans la page, faut-il lui jouter le préfixe descrptif_info ? */
     align-items: center;
     gap:20px;
     /*padding-left:40px;*/
-    box-shadow: 6px 6px 4px  grey;   /* à vérifier */
+    /*box-shadow: 6px 6px 4px  grey;*/   /* à vérifier */
+    box-shadow: 6px 6px 4px  #e7e7e7;   
     cursor: pointer; 
 }
 
@@ -458,8 +460,8 @@ a.fonctions__options_choix:hover i
 .restaurants__ContainerFlex_Resto
 {
     background-color: white;
-    border:5px solid;
-    border-color:transparent;
+    /*border:5px solid;
+    border-color:transparent;*/
     border-radius: 25px; 
     /*min-width:335px;flex:1;*/min-width:250px;
     display:flex;flex:1;
@@ -471,7 +473,8 @@ a.fonctions__options_choix:hover i
     margin-bottom:15px;
    /* width:100%;
     height:100%;*/
-    box-shadow: 6px 6px 4px  grey;   
+    /*box-shadow: 6px 6px 4px  grey;*/
+    box-shadow: 6px 6px 4px  #e7e7e7;      
     /*background-color: purple;*/
     /*test rdx*/
     /*position:relative;*/
@@ -518,7 +521,7 @@ a.fonctions__options_choix:hover i
     font-size:16px;/*workaround  bug in chrome */
 }
 
-.FlexRDX
+.FlexView
 {
     display: flex;
     flex-direction: column;
@@ -699,10 +702,10 @@ footer a:hover
     }
 }
 
-@media screen and (min-width:1440px)
+/*@media screen and (min-width:1440px)
 {
     body
     {
         max-width: 1440px;
     }
-}
+}*/

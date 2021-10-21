@@ -311,17 +311,12 @@ i.coeurplein:hover
     padding-left:10px;
     overflow: hidden;
     
-    /*transition: all 1.5s ease-out;*/
-    /*transition :animation 1.5s ease-out;*/
-    /*transition:slide-left 1.5s ease-out;
-    transition:transform 1.5s ease-out;*/
-    /*transition-duration: 0.5s;*/
-    /*transition-property: transform;*/
-    /*transition: 2s;*/
     transition: transform 330ms ease-in-out;
     animation-fill-mode: backwards;
 
     /*border:solid greenyellow;*/
+    /*box-shadow: 6px 6px 4px  #808080;*/   
+    box-shadow: 6px 6px 4px  #e7e7e7;   
     cursor: pointer;
 }
 .visible
@@ -718,7 +713,8 @@ i.coeurplein:hover
     margin:20px auto 30px auto;/* à vérifier */
     cursor: pointer;font-family: 'Roboto', sans-serif;  font-size:15px;
     border:transparent;
-    box-shadow: 6px 6px 4px  #808080;  
+    /*box-shadow: 6px 6px 4px  #808080;*/
+    box-shadow: 6px 6px 4px  #e7e7e7;     
     transition: box-shadow 0.3s, filter 0.3s; 
 }
 .Commander--input:hover
