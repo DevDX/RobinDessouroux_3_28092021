@@ -39,7 +39,7 @@
 
             &:hover,  &:hover .class_bold/*.restaurants__ContainerFlex_Resto:hover,  .restaurants__ContainerFlex_Resto:hover .class_bold */ 
             {
-                color:#9356DC; border-radius: 25px;  
+                color: $primary;/*#9356DC;*/ border-radius: 25px;  
                 background-color:#f5edff;
             }            
 
@@ -69,7 +69,7 @@
         right:10px;
     
         z-index:6;
-        background-color:#99E2D0;
+        background-color: $tertiary; /*#99E2D0;*/
         color: #058a69;
         width:80px;height:30px;
         border-radius: 3px;

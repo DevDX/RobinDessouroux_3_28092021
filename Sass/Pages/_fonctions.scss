@@ -44,7 +44,7 @@
             position:relative;
             top:0;
             /*right:3rem;*/left:-0.75rem;
-            background-color:/*pink;*/#9356dc;color:white;
+            background-color: $primary; /*#9356dc;*/color:white;
             width:30px;height:30px;
             border-radius: 50%;
             display:flex;
@@ -80,5 +80,5 @@ donc chez moi i
 */
 a.fonctions__options_choix:hover i
 {
-    color:#9356dc;
+    color:$primary; /*#9356dc;*/
 }
