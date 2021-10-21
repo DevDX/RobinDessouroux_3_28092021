@@ -7,16 +7,46 @@
     /*border:2px solid orangered;*/
     margin-bottom:60px;
     background-color:/*#F2F2F2;*/#f6f6f6;
+
+    &h2/* à vérifier restaurants>h2 */
+    {
+        margin-left:15px;
+        font-family: 'Roboto', sans-serif;   
+        font-size:  20px;   font-weight: 700;
+        margin-top:50px;  
+        margin-bottom:30px;
+    }
+    
+    &__ContainerFlex
+    {
+        column-gap:25px;display:flex;flex-direction: column;    
+
+        &_Resto
+        {
+            background-color: white;
+            border:5px solid;
+            border-color:transparent;
+            border-radius: 25px; 
+            /*min-width:335px;flex:1;*/min-width:250px;
+            display:flex;flex:1;
+            flex-direction:column;
+            flex-wrap:wrap;
+            font-size: 16px;    
+            margin-left:15px;
+            margin-right:15px;
+            margin-bottom:15px;
+            box-shadow: 6px 6px 4px  grey;   
+
+            &:hover,  &:hover .class_bold/*.restaurants__ContainerFlex_Resto:hover,  .restaurants__ContainerFlex_Resto:hover .class_bold */ 
+            {
+                color:#9356DC; border-radius: 25px;  
+                background-color:#f5edff;
+            }            
+
+        }
+    }
 }
 
-.restaurants>h2/* à vérifier */
-{
-    margin-left:15px;
-    font-family: 'Roboto', sans-serif;   
-    font-size:  20px;   font-weight: 700;
-    margin-top:50px;  
-    margin-bottom:30px;
-}
 
 /*à vérifier avec KM */
 .ContainerNew
@@ -25,72 +55,38 @@
     width:100%;height:175px;
     /*border:solid lawngreen;*/  
     position:relative;
-}
 
-.New /* à renommer */
-{
-    /*margin-top:-150px;
-    margin-right:25px;
-    margin-left:50px;*/
+    .New  
+    {
+        /*margin-top:-150px;
+        margin-right:25px;
+        margin-left:50px;*/
+        
+        position: absolute;
+        top:10px;
+        /*right:0;*/
+        /*left:10px;*/
+        right:10px;
     
-    position: absolute;
-    top:10px;
-    /*right:0;*/
-    /*left:10px;*/
-    right:10px;
+        z-index:6;
+        background-color:#99E2D0;
+        color: #058a69;
+        width:80px;height:30px;
+        border-radius: 3px;
+        display:flex;/*flex:1;*/
+        justify-content: center;
+        align-items: center;
+        font-size:16px;font-weight:bold;  
+        /*border:solid orange;*/
+        /* demande de KM pas de lien sur NOUVEAU*/
+        pointer-events:unset; 
+        cursor:default; 
+    }
+    
 
-    z-index:6;
-    background-color:#99E2D0;
-    color: #058a69;
-    width:80px;height:30px;
-    border-radius: 3px;
-    display:flex;/*flex:1;*/
-    justify-content: center;
-    align-items: center;
-    font-size:16px;font-weight:bold;  
-    /*border:solid orange;*/
-    /* demande de KM pas de lien sur NOUVEAU*/
-    pointer-events:unset; 
-    cursor:default; 
+
 }
 
-
-/**/
-.restaurants__ContainerFlex
-{
-    /*border:solid green;*/
-    column-gap:25px;display:flex;flex-direction: column;
-}
-
-.restaurants__ContainerFlex_Resto
-{
-    background-color: white;
-    border:5px solid;
-    border-color:transparent;
-    border-radius: 25px; 
-    /*min-width:335px;flex:1;*/min-width:250px;
-    display:flex;flex:1;
-    flex-direction:column;
-    flex-wrap:wrap;
-    font-size: 16px;    
-    margin-left:15px;
-    margin-right:15px;
-    margin-bottom:15px;
-   /* width:100%;
-    height:100%;*/
-    box-shadow: 6px 6px 4px  grey;   
-    /*background-color: purple;*/
-    /*test rdx*/
-    /*position:relative;*/
-}
-
-.restaurants__ContainerFlex_Resto:hover,  .restaurants__ContainerFlex_Resto:hover .class_bold 
- 
-{
-    /*background-color:#99E2D0;*/
-    color:#9356DC; border-radius: 25px;  
-    /*border-color:#FF79da;*/background-color:#f5edff;
-}
 
 .class_top
 {
@@ -111,21 +107,12 @@
     font-size:16px;
     display: flex;
     flex-direction:column ;
-    justify-content: flex-start;gap:5px;
-   
-    
-    
+    justify-content: flex-start;gap:5px;    
     height:77px;/*height:100%;*/
     gap:14px;
 }
 
-.class_bold
-{
-    font-weight:bold;
-    font-size:16px;/*workaround  bug in chrome */
-}
-
-.FlexRDX /* à renommer */ 
+.FlexView
 {
     display: flex;
     flex-direction: column;
@@ -133,40 +120,60 @@
     /*border:solid blue;*/
     width:100%; height:100%;height:78px;
     padding-top:20px;padding-left:15px;padding-bottom:10px;
+
+    .class_bold
+    {
+        /*font-weight:bold;
+        font-size:16px;*//*workaround  bug in chrome */
+        @include bold;
+    }
 }
 
 .Container_coeur
 {
     display: flex;flex-direction: row;;
-    position: relative;    
+    position: relative;   
+    
+    .coeurplein, .coeurvide
+    {
+        font-size:24px;font-weight:100;
+        position: absolute;
+        top:-70px;right:20px;    /*border:solid pink;*/
+        /*color:white;*/
+    }
+    
 }
 
-.coeurplein, .coeurvide
-{
-    font-size:24px;font-weight:100;
-    position: absolute;
-    top:-70px;right:20px;    /*border:solid pink;*/
-    /*color:white;*/
-}
+
 i.coeurplein
 {
-    /*z-index:6;*/opacity:0;z-index:8;
+    opacity:0;z-index:8;
+   
+    &:hover /* i.coeurplein:hover */
+    {
+        /*z-index:8;*/
+        animation: fillheart 0.3s linear forwards;
+        opacity:1;
+    }
+
 }
 i.coeurvide
 {
     z-index:6;opacity: 1;
-}
-i.coeurvide:hover
-{
-    opacity:0;z-index:1;
+
+    &:hover /* i.coeurvide:hover */
+    {
+        opacity:0;z-index:1;
+    }
+
+
 }
 
-i.coeurplein:hover
+i.coeurplein:before, i.coeurvide:before /* vérifier si vraiment utile */
 {
-    /*z-index:8;*/
-    animation: fillheart 0.3s linear forwards;
-    opacity:1;
+    display: initial;
 }
+
 @keyframes fillheart
 {
     0% 
@@ -205,17 +212,7 @@ i.coeurplein:hover
         color: transparent;font-size:24.25px;
     }
 }
-i.coeurplein:before, i.coeurvide:before {
-    display: initial;
-  }
-/*.coeur:hover:after
-{
-        background: linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-}*/
-/*.verif
-{
-    /*border:2px solid green;*/
-    /*background-color: chartreuse;
-    width:100%;height:100%;
-}*/
+
+
+
 

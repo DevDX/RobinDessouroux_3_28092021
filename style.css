@@ -518,7 +518,7 @@ a.fonctions__options_choix:hover i
     font-size:16px;/*workaround  bug in chrome */
 }
 
-.FlexRDX
+.FlexView
 {
     display: flex;
     flex-direction: column;
