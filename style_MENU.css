@@ -73,7 +73,7 @@ header
     /*min-width:179px;min-height:32px;*/
 }
 
-.header__logo_ohmyfood
+.header__logo__ohmyfood
 {
     width:100%;height:100%;    
     /*border:solid pink;*/
@@ -751,7 +751,7 @@ footer>h3
     margin-bottom:35px;
 }
 
-.footer__bottom_row
+.footer__bottom__row
 {
     display:flex;
     flex-direction:row;   gap:10px;    
