@@ -139,7 +139,14 @@
     display: flex;flex-direction: row;
     position: relative;   
     
-    .coeurplein, .coeurvide
+    .coeurplein
+    {
+        font-size:24px;font-weight:100;
+        position: absolute;
+        top:-70px;right:20px;    /*border:solid pink;*/
+        /*color:white;*/
+    }
+    .coeurvide
     {
         font-size:24px;font-weight:100;
         position: absolute;
@@ -150,40 +157,22 @@
 }
 
 
-i.coeurplein
+.coeurplein
 {
     opacity:0;z-index:8;
    
     &:hover /* i.coeurplein:hover */
     {
-        /*z-index:8;*/
+        font-weight:900; /*z-index:8;*/ 
         animation: fillheart 0.3s linear forwards;
         opacity:1;
     }
 
-}
-i.coeurvide
-{
-    z-index:6;opacity: 1;
-
-    &:hover /* i.coeurvide:hover */
+    @keyframes fillheart
     {
-        opacity:0;z-index:1;
-    }
-
-
-}
-
-i.coeurplein:before, i.coeurvide:before /* vérifier si vraiment utile */
-{
-    display: initial;
-}
-
-@keyframes fillheart
-{
     0% 
     {
-        opacity: .25;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        opacity: 0.25;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;font-size:24.25px;
@@ -217,6 +206,27 @@ i.coeurplein:before, i.coeurvide:before /* vérifier si vraiment utile */
         color: transparent;font-size:24.25px;
     }
 }
+
+}
+i.coeurvide
+{
+    z-index:6;opacity: 1;
+
+    &:hover /* i.coeurvide:hover */
+    {
+        opacity:0;z-index:1;
+       
+    }
+
+
+}
+
+i.coeurplein:before, i.coeurvide:before /* vérifier si vraiment utile */
+{
+    display: initial;
+}
+
+
 
 @media screen and (min-width:768px)
 {

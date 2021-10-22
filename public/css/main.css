@@ -776,7 +776,16 @@ main {
           flex-direction: row;
   position: relative;
 }
-.Container_coeur .coeurplein, .Container_coeur .coeurvide {
+.Container_coeur .coeurplein {
+  font-size: 24px;
+  font-weight: 100;
+  position: absolute;
+  top: -70px;
+  right: 20px;
+  /*border:solid pink;*/
+  /*color:white;*/
+}
+.Container_coeur .coeurvide {
   font-size: 24px;
   font-weight: 100;
   position: absolute;
@@ -786,30 +795,17 @@ main {
   /*color:white;*/
 }
 
-i.coeurplein {
+.coeurplein {
   opacity: 0;
   z-index: 8;
 }
-i.coeurplein:hover {
+.coeurplein:hover {
+  font-weight: 900;
   /*z-index:8;*/
   -webkit-animation: fillheart 0.3s linear forwards;
           animation: fillheart 0.3s linear forwards;
   opacity: 1;
 }
-
-i.coeurvide {
-  z-index: 6;
-  opacity: 1;
-}
-i.coeurvide:hover {
-  opacity: 0;
-  z-index: 1;
-}
-
-i.coeurplein:before, i.coeurvide:before {
-  display: initial;
-}
-
 @-webkit-keyframes fillheart {
   0% {
     opacity: 0.25;
@@ -857,7 +853,6 @@ i.coeurplein:before, i.coeurvide:before {
     font-size: 24.25px;
   }
 }
-
 @keyframes fillheart {
   0% {
     opacity: 0.25;
@@ -910,6 +905,20 @@ i.coeurplein:before, i.coeurvide:before {
     font-size: 24.25px;
   }
 }
+
+i.coeurvide {
+  z-index: 6;
+  opacity: 1;
+}
+i.coeurvide:hover {
+  opacity: 0;
+  z-index: 1;
+}
+
+i.coeurplein:before, i.coeurvide:before {
+  display: initial;
+}
+
 @media screen and (min-width: 768px) {
   .restaurants__ContainerFlex {
     gap: 20px;
