@@ -21,7 +21,7 @@
     {
         column-gap:25px;display:flex;flex-direction: column;    
 
-        &_Resto
+        &__Resto
         {
             background-color: white;
             /*border:5px solid;
@@ -239,7 +239,7 @@ i.coeurplein:before, i.coeurvide:before /* vérifier si vraiment utile */
         margin-top:45px;  
         flex-wrap: wrap;  
 
-        &_Resto
+        &__Resto
         {
             flex:2;width:100%;       
         }

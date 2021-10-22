@@ -21,7 +21,7 @@
         display:flex;
         gap:22px; flex-direction: column;
         
-        &_choix
+        &__choix
         {
             border-radius:20px;
             /*width:326px;*/min-height:73px;
@@ -41,7 +41,7 @@
     
 
 
-        &_bulle
+        &__bulle
         {
             position:relative;
             top:0;
@@ -68,7 +68,7 @@
 }
 
 
-a.fonctions__options_choix:hover 
+a.fonctions__options__choix:hover 
 {
     background-color:#f5edff;  
 }
@@ -80,7 +80,7 @@ identifiant:hover a{
 }
 donc chez moi i
 */
-a.fonctions__options_choix:hover i
+a.fonctions__options__choix:hover i
 {
     color:$primary; /*#9356dc;*/
 }

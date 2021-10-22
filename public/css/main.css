@@ -73,7 +73,7 @@ p {
   position: relative;
   margin: 1rem 100px;
 }
-.header__logo_ohmyfood {
+.header__logo__ohmyfood {
   width: 100%;
   height: 100%;
   font-size: clamp(28px,5vw,68px);
@@ -112,7 +112,7 @@ p {
   margin-left: 15px;
   margin-bottom: 35px;
 }
-.footer__bottom_row {
+.footer__bottom__row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -261,7 +261,7 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.fonctions__options_choix {
+.fonctions__options__choix {
   border-radius: 20px;
   /*width:326px;*/
   min-height: 73px;
@@ -294,7 +294,7 @@ h1 {
   /* à vérifier */
   cursor: pointer;
 }
-.fonctions__options_bulle {
+.fonctions__options__bulle {
   position: relative;
   top: 0;
   /*right:3rem;*/
@@ -324,7 +324,7 @@ h1 {
   font-size: 16px;
 }
 
-a.fonctions__options_choix:hover {
+a.fonctions__options__choix:hover {
   background-color: #f5edff;
 }
 
@@ -335,7 +335,7 @@ identifiant:hover a{
 }
 donc chez moi i
 */
-a.fonctions__options_choix:hover i {
+a.fonctions__options__choix:hover i {
   color: #9356DC;
   /*#9356dc;*/
 }
@@ -385,7 +385,7 @@ a.fonctions__options_choix:hover i {
   gap: 10px;
   height: 30px;
 }
-.localisation__ville_PositionVille {
+.localisation__ville__PositionVille {
   /*background-color: #F2F2F2;*/
   max-width: 55px;
   width: 100%;
@@ -408,7 +408,7 @@ a.fonctions__options_choix:hover i {
       -ms-flex-align: center;
           align-items: center;
 }
-.localisation__ville_VilleChoisie {
+.localisation__ville__VilleChoisie {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -608,7 +608,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.restaurants__ContainerFlex_Resto {
+.restaurants__ContainerFlex__Resto {
   background-color: white;
   /*border:5px solid;
   border-color:transparent;*/
@@ -641,7 +641,7 @@ main {
           box-shadow: 6px 6px 4px #e7e7e7;
   /* à vérifier */
 }
-.restaurants__ContainerFlex_Resto:hover, .restaurants__ContainerFlex_Resto:hover .class_bold {
+.restaurants__ContainerFlex__Resto:hover, .restaurants__ContainerFlex__Resto:hover .class_bold {
   color: #9356DC;
   /*#9356DC;*/
   border-radius: 25px;
@@ -933,7 +933,7 @@ i.coeurplein:before, i.coeurvide:before {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  .restaurants__ContainerFlex_Resto {
+  .restaurants__ContainerFlex__Resto {
     -webkit-box-flex: 2;
     -webkit-flex: 2;
         -ms-flex: 2;

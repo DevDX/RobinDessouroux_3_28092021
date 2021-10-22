@@ -17,7 +17,7 @@
         display:flex;justify-content:center;  
         gap:10px;height:30px;    
     
-        &_PositionVille
+        &__PositionVille
         {
             /*background-color: #F2F2F2;*/
             max-width:55px;width:100%;
@@ -29,7 +29,7 @@
             align-items:center;  
         }   
     
-        &_VilleChoisie
+        &__VilleChoisie
         {
             font-size:18px; font-family: 'Roboto', sans-serif;   
             font-weight: 500; color:black;
