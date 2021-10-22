@@ -24,8 +24,8 @@
         &_Resto
         {
             background-color: white;
-            border:5px solid;
-            border-color:transparent;
+            /*border:5px solid;
+            border-color:transparent;*/
             border-radius: 25px; 
             /*min-width:335px;flex:1;*/min-width:250px;
             display:flex;flex:1;
@@ -183,7 +183,7 @@ i.coeurplein:before, i.coeurvide:before /* vérifier si vraiment utile */
 {
     0% 
     {
-        opacity: 0.25;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        opacity: .25;background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;font-size:24.25px;

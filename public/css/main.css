@@ -610,8 +610,8 @@ main {
 }
 .restaurants__ContainerFlex_Resto {
   background-color: white;
-  border: 5px solid;
-  border-color: transparent;
+  /*border:5px solid;
+  border-color:transparent;*/
   border-radius: 25px;
   /*min-width:335px;flex:1;*/
   min-width: 250px;
