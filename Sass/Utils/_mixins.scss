@@ -21,3 +21,9 @@
 {
     box-shadow: 6px 6px 4px  $shadow;   /* à vérifier */
 }
+
+@mixin gras /*.gras*/
+{
+    font-weight:bold;
+	overflow: hidden;
+}

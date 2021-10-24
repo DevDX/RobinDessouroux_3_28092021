@@ -1,4 +1,4 @@
-/
+
 /* article gastronomie */
 .gastronomie
 {
@@ -272,10 +272,9 @@ i.coeurvide
 
 /**/
 
-.bold
+.gras
 {
-    font-weight: bold; 
-    overflow: hidden;
+    @include gras;
 }
 .intitule
 {
@@ -591,6 +590,30 @@ i.coeurvide
     
 }
 
+@media screen and (min-width:1648px)
+/*@media screen and (min-width:756px)*/
+{
+    
+    .gastronomie__LaCarte
+    {
+        gap:30px;
+    }
+    .entrées, .plats, .desserts
+    {
+        flex-direction: row;
+        /*border:solid red;*/
+       
+    }
+    .SousTitre
+    {
+        /*border:solid lightsalmon;*/      
+        margin-top:10px;  margin-right:30px;
+        max-height:28px;
+        padding-top:0;padding-bottom: 2px;
+        
+    }
 
+
+}
 
 
