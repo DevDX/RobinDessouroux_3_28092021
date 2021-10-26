@@ -550,9 +550,10 @@ i.coeurplein:hover
         color: transparent;font-size:24.25px;
     }
 }
-i.coeurplein:before, i.coeurvide:before {
+/*i.coeurplein:before, i.coeurvide:before 
+{
     display: initial;
-  }
+}*/
 
 
 /* footer */
