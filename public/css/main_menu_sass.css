@@ -253,7 +253,7 @@ Pour cela vous devez utiliser la propriété Css width à 100% sur l'image et pr
   background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  border-color: #f6f6f6;
+  border-color: transparent;
   z-index: 5;
   margin-top: -60px;
   /*border: solid lime;*/
