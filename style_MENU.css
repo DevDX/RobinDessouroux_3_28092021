@@ -531,14 +531,6 @@ i.coeurplein:hover
     transform: rotate(0);
     /*margin-right:-20px;*/
   }
-  25%
-  {
-    /*margin-right:-15px;*/
-  }
-  50%
-  {
-    /*margin-right:-10px;*/
-  }
   100% 
   {
     -webkit-transform: rotate(360deg);
