@@ -152,16 +152,23 @@ Pour cela vous devez utiliser la propriété Css width à 100% sur l'image et pr
     */
     background: no-repeat center/50% url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-size: cover;
-}     
+} 
+
+.dummy
+{
+    display:none;
+}
+
 /* article gastronomie */
 .gastronomie
 {
     background-color:#f6f6f6;
     border-top-left-radius:30px;
     border-top-right-radius:30px;
-    border-color:#f6f6f6;
+    border-color:/*#f6f6f6;*/ transparent;
     z-index:5;
     margin-top:-60px;
+    /*border: solid lime;*/
 }
 .gastronomie__LaCarte
 {
@@ -572,7 +579,11 @@ i.coeurplein:hover
     filter: brightness(110%);
     /*box-shadow: 6px 6px 4px  black;*/   box-shadow: 6px 6px 4px  #333;  
 }
-
+.Commander--input p
+{
+    color:white;text-align: center;
+    margin-top:17px;font-weight:500;    
+}
 
 /* footer */
 .footer
