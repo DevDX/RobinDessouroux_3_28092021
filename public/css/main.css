@@ -216,6 +216,12 @@ footer a:hover {
   -webkit-box-shadow: 6px 6px 4px #333;
           box-shadow: 6px 6px 4px #333;
 }
+.descriptif__input--button p {
+  color: white;
+  text-align: center;
+  margin-top: 17px;
+  font-weight: 500;
+}
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -340,6 +346,10 @@ a.fonctions__options__choix:hover i {
   /*#9356dc;*/
 }
 
+.dummy {
+  display: none;
+}
+
 @media screen and (min-width: 864px) {
   .fonctions__options {
     -webkit-box-orient: horizontal;
@@ -433,6 +443,10 @@ a.fonctions__options__choix:hover i {
   /*margin-left:15px;*/
   background-color: #eaeaea;
   border: none;
+}
+
+.dummy {
+  display: none;
 }
 
 /* main */

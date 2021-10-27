@@ -649,6 +649,10 @@ i.coeurvide:hover {
   }
 }
 /**/
+.dummy {
+  display: none;
+}
+
 .gras {
   font-weight: bold;
   overflow: hidden;
@@ -906,6 +910,12 @@ i.coeurvide:hover {
   /*box-shadow: 6px 6px 4px  black;*/
   -webkit-box-shadow: 6px 6px 4px #333;
           box-shadow: 6px 6px 4px #333;
+}
+.Commander--input p {
+  color: white;
+  text-align: center;
+  margin-top: 17px;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 1648px) {

@@ -85,6 +85,10 @@ a.fonctions__options__choix:hover i
     color:$primary; /*#9356dc;*/
 }
 
+.dummy
+{
+    @include bidon;
+}
 
 @media screen and (min-width:864px)
 {

@@ -271,7 +271,10 @@ i.coeurvide
 
 
 /**/
-
+.dummy
+{
+    @include bidon;
+}
 .gras
 {
     @include gras;
@@ -461,7 +464,11 @@ i.coeurvide
             /*box-shadow: 6px 6px 4px  black;*/   box-shadow: 6px 6px 4px  #333;  
         }
 
-        
+        & p
+        {
+            color:white;text-align: center;
+            margin-top:17px;font-weight:500;  
+        }
         
     }
     
